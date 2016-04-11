@@ -13,5 +13,8 @@ def buildNumber():
     elif len(os.sys.argv) == 2:
         build_number = os.sys.argv[1]
     return build_number
+
+print buildNumber()
+
 if __name__ == '__main__':
-    print buildNumber()
+    buildNumber()
