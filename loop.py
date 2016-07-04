@@ -1,16 +1,17 @@
+#coding=utf-8
 import os
-import sys
 import time
 
-tmp = time.ctime(os.path.getmtime("1.txt"))
+print "Working~"
+tmp = time.ctime(os.path.getmtime("loop.py"))
 while True:
-    t = time.ctime(os.path.getmtime("1.txt"))
-    print t
+    t = time.ctime(os.path.getmtime("loop.py"))
     if t == tmp:
-        tmp = t
         time.sleep(5)
     else:
         print "modify"
+        os.system("cat loop.py")
         tmp = t
+        print "Working~"
         time.sleep(5)
 
