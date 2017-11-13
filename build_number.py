@@ -15,6 +15,7 @@ def buildNumber():
     return build_number
 
 print buildNumber()
+print buildNumber()
 
 if __name__ == '__main__':
     buildNumber()
